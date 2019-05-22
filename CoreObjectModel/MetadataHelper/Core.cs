@@ -525,6 +525,9 @@ namespace Microsoft.Cci {
 #endif
 
 #if !COREFX_SUBSET
+#if __MonoCS__
+      var platformDir = Path.GetDirectoryName(Path.GetFullPath(GetLocalPath(typeof(object).Assembly.GetName())))??"";
+#else
       // Check platform location
       var platformDir = Path.GetDirectoryName(Path.GetFullPath(GetLocalPath(typeof(object).Assembly.GetName())))??"";
       var coreVersion = this.CoreAssemblySymbolicIdentity.Version;
@@ -544,6 +547,7 @@ namespace Microsoft.Cci {
       } else if (coreVersion.Major == 4) {
         platformDir = Path.Combine(Path.GetDirectoryName(platformDir)??"", "v4.0.30319");
       }
+#endif
 
       result = this.Probe(platformDir, referencedAssembly);
       if (result != null) return result;
