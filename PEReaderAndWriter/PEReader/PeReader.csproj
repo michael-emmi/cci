@@ -124,12 +124,12 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\common\include\Version.cs">
+    <Compile Include="..\..\Common\Include\Version.cs">
       <Link>Build\Version.cs</Link>
     </Compile>
-    <Compile Include="..\..\common\include\PortingHelpers.cs" />
-    <Compile Include="..\..\common\include\DietCollection.cs" />
-    <Compile Include="..\..\common\include\CciEventSource.cs" />
+    <Compile Include="..\..\Common\Include\PortingHelpers.cs" />
+    <Compile Include="..\..\Common\Include\DietCollection.cs" />
+    <Compile Include="..\..\Common\Include\CCIEventSource.cs" />
     <Compile Include="AliasForTypeExtensions.cs" />
     <Compile Include="Attributes.cs" />
     <Compile Include="BinaryObjectModel.cs" />
