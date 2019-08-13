@@ -99,10 +99,10 @@
     <DocumentationFile>bin\Release\Microsoft.Cci.SourceModel.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\common\include\Version.cs">
+    <Compile Include="..\..\Common\Include\Version.cs">
       <Link>Build\Version.cs</Link>
     </Compile>
-    <Compile Include="..\..\common\include\DietCollection.cs" />
+    <Compile Include="..\..\Common\Include\DietCollection.cs" />
     <Compile Include="DummyObjects.cs" />
     <Compile Include="Implementations.cs" />
     <Compile Include="Interfaces.cs" />
